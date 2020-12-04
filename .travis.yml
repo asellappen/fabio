@@ -37,11 +37,15 @@ matrix:
      dist: xenial
      arch : ppc64le
 before_install:
-  - "pip install Glymur"
-  - "pip install pillow"
+ - if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then
+      pip install Glymur;
+      pip install pillow;
+      pip install pgmagick;
+	 fi
 # command to install dependencies
 install:
   # Upgrade distribution modules
+  
   - "python -m pip install --upgrade pip"
   - "pip install --upgrade setuptools"
   - "pip install --upgrade wheel"
