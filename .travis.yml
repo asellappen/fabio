@@ -40,7 +40,6 @@ before_install:
  - if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then
       pip install Glymur;
       pip install pillow;
-      pip install pgmagick;
    fi
 # command to install dependencies
 install:
