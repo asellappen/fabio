@@ -41,7 +41,7 @@ before_install:
       pip install Glymur;
       pip install pillow;
       pip install pgmagick;
-	 fi
+   fi
 # command to install dependencies
 install:
   # Upgrade distribution modules
