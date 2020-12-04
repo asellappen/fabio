@@ -38,6 +38,7 @@ matrix:
      arch : ppc64le
 before_install:
   - "pip install Glymur"
+  - "pip install pillow"
 # command to install dependencies
 install:
   # Upgrade distribution modules
