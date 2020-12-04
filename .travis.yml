@@ -36,6 +36,8 @@ matrix:
    - python: 3.8
      dist: xenial
      arch : ppc64le
+before_install:
+  - "pip install Glymur"
 # command to install dependencies
 install:
   # Upgrade distribution modules
