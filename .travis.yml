@@ -19,7 +19,23 @@ matrix:
      dist: xenial
    - python: 3.8
      dist: xenial
-     
+   - python: 3.6
+     arch : ppc64le
+     os: linux
+   - python: 3.7
+     dist: xenial
+     arch : ppc64le
+   - python: 3.7
+     os: linux-ppc64le
+     dist: xenial
+     arch : ppc64le
+   - python: 3.7
+     os: linux-arm64
+     dist: xenial
+     arch : ppc64le
+   - python: 3.8
+     dist: xenial
+     arch : ppc64le
 # command to install dependencies
 install:
   # Upgrade distribution modules
