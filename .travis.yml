@@ -21,26 +21,19 @@ matrix:
      dist: xenial
    - python: 3.6
      arch : ppc64le
+     dist: bionic
      os: linux
    - python: 3.7
-     dist: xenial
+     dist: bionic
      arch : ppc64le
    - python: 3.7
      os: linux-ppc64le
-     dist: xenial
-     arch : ppc64le
-   - python: 3.7
-     os: linux-arm64
-     dist: xenial
+     dist: bionic
      arch : ppc64le
    - python: 3.8
-     dist: xenial
+     dist: bionic
      arch : ppc64le
-before_install:
- - if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then
-      pip install Glymur;
-      pip install pillow;
-   fi
+
 # command to install dependencies
 install:
   # Upgrade distribution modules
