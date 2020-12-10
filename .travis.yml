@@ -20,20 +20,18 @@ matrix:
    - python: 3.8
      dist: xenial
    - python: 3.6
-     arch : ppc64le
-     dist: bionic
      os: linux
+     arch : ppc64le
    - python: 3.7
-     dist: bionic
+     dist: xenial
      arch : ppc64le
    - python: 3.7
      os: linux-ppc64le
-     dist: bionic
+     dist: xenial
      arch : ppc64le
    - python: 3.8
-     dist: bionic
+     dist: xenial
      arch : ppc64le
-
 # command to install dependencies
 install:
   # Upgrade distribution modules
